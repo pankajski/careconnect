@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baby Care Services - CareConnect</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Animate.css for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/babycare-styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+          <i class="fas fa-heart text-primary me-2"></i>CareConnect
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item active" href="babycare.html"
+                    >Baby Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#adult-care"
+                    >Adult Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#senior-care"
+                    >Senior Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#tutoring"
+                    >Tutoring</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#housekeeping"
+                    >Housekeeping</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Login/Register Buttons -->
+          <div class="d-flex gap-2">
+            <button
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <i class="fas fa-sign-in-alt me-1"></i>Login
+            </button>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              <i class="fas fa-user-plus me-1"></i>Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="baby-hero-section">
+      <div class="baby-hero-bg">
+        <div class="floating-elements">
+          <div class="floating-toy toy-1">🧸</div>
+          <div class="floating-toy toy-2">🍼</div>
+          <div class="floating-toy toy-3">🎈</div>
+          <div class="floating-toy toy-4">⭐</div>
+          <div class="floating-toy toy-5">🌙</div>
+          <div class="floating-toy toy-1">🧸</div>
+          <div class="floating-toy toy-2">🍼</div>
+          <div class="floating-toy toy-3">🎈</div>
+          <div class="floating-toy toy-4">⭐</div>
+          <div class="floating-toy toy-5">🌙</div>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <div class="hero-content text-white">
+              <h1
+                class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp"
+              >
+                Loving Baby Care Services
+                <span class="baby-heart">💝</span>
+              </h1>
+              <p
+                class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s"
+                style="color: #075a6e"
+              >
+                Professional, caring babysitters and nannies who treat your
+                little ones with the love and attention they deserve. Safe,
+                reliable, and nurturing care.
+              </p>
+              <div
+                class="hero-stats mb-4 animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                <div class="row g-3" style="color: #075a6e">
+                  <div class="col-6 col-md-3">
+                    <div class="stat-item text-center">
+                      <div class="stat-number" style="color: #e70682">500+</div>
+                      <div class="stat-label">Happy Families</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="stat-item text-center">
+                      <div class="stat-number" style="color: #e70682">200+</div>
+                      <div class="stat-label">Certified Sitters</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="stat-item text-center">
+                      <div class="stat-number" style="color: #e70682">99%</div>
+                      <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="stat-item text-center">
+                      <div class="stat-number" style="color: #e70682">24/7</div>
+                      <div class="stat-label">Available</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hero-buttons animate__animated animate__fadeInUp animate__delay-3s"
+              >
+                <a href="#find-sitter" class="btn btn-primary btn-lg me-3">
+                  <i class="fas fa-search me-2"></i>Find a Babysitter
+                </a>
+                <a href="#how-it-works" class="btn btn-outline-light btn-lg">
+                  <i class="fas fa-play me-2"></i>How It Works
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="hero-image-container animate__animated animate__fadeInRight animate__delay-1s"
+            >
+              <div class="baby-image-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Happy baby with caregiver"
+                  class="img-fluid rounded-4 shadow-lg baby-hero-img"
+                />
+                <div class="image-badge">
+                  <i class="fas fa-heart text-danger"></i>
+                  <span>Trusted Care</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Types Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold mb-3 text-primary">
+              Our Baby Care Services
+            </h2>
+            <p class="lead text-muted">
+              Comprehensive care solutions for every stage of your baby's growth
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Newborn Care -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-type-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="service-image mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Newborn care"
+                    class="img-fluid rounded-3 service-img"
+                  />
+                  <div class="service-badge">
+                    <i class="fas fa-baby text-white"></i>
+                  </div>
+                </div>
+                <h4 class="card-title text-primary mb-3">Newborn Care</h4>
+                <p class="card-text text-muted mb-4">
+                  Specialized care for newborns including feeding, diaper
+                  changing, sleep training, and gentle nurturing in their first
+                  months.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Feeding
+                    assistance
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Diaper
+                    changing
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Sleep
+                    scheduling
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Gentle
+                    soothing
+                  </li>
+                </ul>
+                <div class="service-price">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-amount">$18/hour</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regular Babysitting -->
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="service-type-card card h-100 border-0 shadow-sm featured-service"
+            >
+              <div class="card-body p-4 text-center">
+                <div class="featured-badge">Most Popular</div>
+                <div class="service-image mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1607023714121-9b0e00a7ee8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Babysitting"
+                    class="img-fluid rounded-3 service-img"
+                  />
+                  <div class="service-badge">
+                    <i class="fas fa-child text-white"></i>
+                  </div>
+                </div>
+                <h4 class="card-title text-primary mb-3">
+                  Regular Babysitting
+                </h4>
+                <p class="card-text text-muted mb-4">
+                  Reliable babysitting services for toddlers and young children.
+                  Fun activities, meal preparation, and attentive supervision.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i
+                    >Interactive play
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Meal
+                    preparation
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i
+                    >Educational activities
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Safety
+                    supervision
+                  </li>
+                </ul>
+                <div class="service-price">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-amount">$15/hour</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full-time Nanny -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-type-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="service-image mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1555778103-13fba53b7e70?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Nanny services"
+                    class="img-fluid rounded-3 service-img"
+                  />
+                  <div class="service-badge">
+                    <i class="fas fa-home text-white"></i>
+                  </div>
+                </div>
+                <h4 class="card-title text-primary mb-3">Full-time Nanny</h4>
+                <p class="card-text text-muted mb-4">
+                  Dedicated live-in or daily nanny services providing
+                  comprehensive childcare, development activities, and household
+                  support.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Daily
+                    childcare
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i
+                    >Development activities
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i>Light
+                    housekeeping
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle text-success me-2"></i
+                    >Transportation
+                  </li>
+                </ul>
+                <div class="service-price">
+                  <span class="price-label">Starting from</span>
+                  <span class="price-amount">$25/hour</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="why-choose-image">
+              <img
+                src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Caring babysitter reading to children"
+                class="img-fluid rounded-4 shadow-lg main-image"
+              />
+              <div class="trust-badge">
+                <div class="badge-content">
+                  <i class="fas fa-shield-alt text-primary"></i>
+                  <span class="fw-bold">100% Background Verified</span>
+                </div>
+              </div>
+              <div class="floating-hearts">
+                <span class="heart heart-1">💖</span>
+                <span class="heart heart-2">💕</span>
+                <span class="heart heart-3">💗</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ps-lg-4">
+              <h6 class="text-primary fw-bold mb-2">WHY CHOOSE CARECONNECT</h6>
+              <h2 class="display-6 fw-bold mb-4">
+                Your Baby Deserves the Best Care
+              </h2>
+              <p class="text-muted mb-4">
+                We understand how precious your little ones are. That's why we
+                go above and beyond to ensure every babysitter and nanny on our
+                platform meets the highest standards of care, safety, and
+                professionalism.
+              </p>
+
+              <div class="why-features">
+                <div class="feature-item d-flex align-items-start mb-4">
+                  <div class="feature-icon me-3">
+                    <i class="fas fa-user-graduate text-primary"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Certified Caregivers</h6>
+                    <p class="text-muted mb-0">
+                      All our babysitters are certified in infant CPR and first
+                      aid, ensuring your baby's safety.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item d-flex align-items-start mb-4">
+                  <div class="feature-icon me-3">
+                    <i class="fas fa-heart text-primary"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Loving & Experienced</h6>
+                    <p class="text-muted mb-0">
+                      Our caregivers have years of experience and genuine love
+                      for children of all ages.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item d-flex align-items-start mb-4">
+                  <div class="feature-icon me-3">
+                    <i class="fas fa-mobile-alt text-primary"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-2">Real-time Updates</h6>
+                    <p class="text-muted mb-0">
+                      Stay connected with photos, messages, and updates about
+                      your baby's activities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#find-sitter" class="btn btn-primary btn-lg">
+                <i class="fas fa-star me-2"></i>Find Perfect Babysitter
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold mb-3">
+              How to Find Your Perfect Babysitter
+            </h2>
+            <p class="lead">
+              Simple steps to connect with the ideal caregiver for your little
+              one
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+              <div class="step-number mb-3">
+                <span class="step-count">1</span>
+                <div class="step-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <h5 class="mb-3">Tell Us Your Needs</h5>
+              <p class="mb-0">
+                Share your baby's age, your schedule, and specific care
+                requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+              <div class="step-number mb-3">
+                <span class="step-count">2</span>
+                <div class="step-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+              </div>
+              <h5 class="mb-3">Browse Caregivers</h5>
+              <p class="mb-0">
+                View profiles of qualified babysitters with photos, reviews, and
+                certifications.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+              <div class="step-number mb-3">
+                <span class="step-count">3</span>
+                <div class="step-icon">
+                  <i class="fas fa-comments"></i>
+                </div>
+              </div>
+              <h5 class="mb-3">Meet & Interview</h5>
+              <p class="mb-0">
+                Connect with potential babysitters and conduct interviews to
+                find the perfect match.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="process-step text-center">
+              <div class="step-number mb-3">
+                <span class="step-count">4</span>
+                <div class="step-icon">
+                  <i class="fas fa-calendar-check"></i>
+                </div>
+              </div>
+              <h5 class="mb-3">Book & Relax</h5>
+              <p class="mb-0">
+                Schedule your babysitting sessions and enjoy peace of mind
+                knowing your baby is in good hands.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold mb-3">What Parents Say</h2>
+            <p class="lead text-muted">
+              Real stories from families who trust CareConnect
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="testimonial-header d-flex align-items-center mb-3">
+                  <div class="parent-avatar me-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                      alt="Sarah M."
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Sarah M.</h6>
+                    <div class="stars">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "Emma has been a blessing for our family. She's so patient
+                  with our 6-month-old and always sends updates with photos. I
+                  feel completely at ease when I'm at work."
+                </p>
+                <small class="text-muted">Mother of 6-month-old</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="testimonial-header d-flex align-items-center mb-3">
+                  <div class="parent-avatar me-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                      alt="Michael R."
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Michael R.</h6>
+                    <div class="stars">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "The background check process gave us confidence. Lisa is
+                  professional, punctual, and our twins absolutely love her.
+                  She's become part of our family!"
+                </p>
+                <small class="text-muted">Father of 2-year-old twins</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="testimonial-header d-flex align-items-center mb-3">
+                  <div class="parent-avatar me-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                      alt="Jessica L."
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Jessica L.</h6>
+                    <div class="stars">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "Finding a babysitter for date nights used to be so stressful.
+                  Now I have three reliable sitters I can call. The peace of
+                  mind is priceless!"
+                </p>
+                <small class="text-muted">Mother of 3-year-old</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Sitter Section -->
+    <section id="find-sitter" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold mb-3">
+                Find Your Perfect Babysitter
+              </h2>
+              <p class="lead text-muted">
+                Tell us what you're looking for and we'll match you with
+                qualified caregivers
+              </p>
+            </div>
+
+            <div class="finder-card card border-0 shadow">
+              <div class="card-body p-5">
+                <form id="babysitterForm">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="childAge" class="form-label fw-bold"
+                        >Child's Age *</label
+                      >
+                      <select class="form-select" id="childAge" required>
+                        <option value="">Select age range</option>
+                        <option value="newborn">Newborn (0-3 months)</option>
+                        <option value="infant">Infant (3-12 months)</option>
+                        <option value="toddler">Toddler (1-3 years)</option>
+                        <option value="preschool">
+                          Preschooler (3-5 years)
+                        </option>
+                        <option value="school">School age (5+ years)</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="careType" class="form-label fw-bold"
+                        >Type of Care *</label
+                      >
+                      <select class="form-select" id="careType" required>
+                        <option value="">Select care type</option>
+                        <option value="occasional">
+                          Occasional babysitting
+                        </option>
+                        <option value="regular">Regular weekly care</option>
+                        <option value="fulltime">Full-time nanny</option>
+                        <option value="emergency">Emergency/last-minute</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="startDate" class="form-label fw-bold"
+                        >When do you need care?</label
+                      >
+                      <input type="date" class="form-control" id="startDate" />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="zipCode" class="form-label fw-bold"
+                        >ZIP Code *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="zipCode"
+                        placeholder="Enter your ZIP code"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="form-label fw-bold"
+                      >Special Requirements</label
+                    >
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="cprCertified"
+                          />
+                          <label class="form-check-label" for="cprCertified"
+                            >CPR Certified</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="experienceNewborn"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="experienceNewborn"
+                            >Newborn Experience</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="ownTransportation"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="ownTransportation"
+                            >Own Transportation</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="petFriendly"
+                          />
+                          <label class="form-check-label" for="petFriendly"
+                            >Comfortable with Pets</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="lightHousework"
+                          />
+                          <label class="form-check-label" for="lightHousework"
+                            >Light Housework</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="mealPrep"
+                          />
+                          <label class="form-check-label" for="mealPrep"
+                            >Meal Preparation</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                      <i class="fas fa-search me-2"></i>Find Babysitters Now
+                    </button>
+                    <p class="text-muted mt-3 mb-0">
+                      <small
+                        ><i class="fas fa-shield-alt me-1"></i>All caregivers
+                        are background checked and verified</small
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Care CTA -->
+    <section class="py-5 bg-gradient-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-8 mx-auto">
+            <div class="emergency-icon mb-4">
+              <i class="fas fa-phone-alt fa-3x"></i>
+            </div>
+            <h2 class="display-6 fw-bold mb-4">
+              Need Last-Minute Babysitting?
+            </h2>
+            <p class="lead mb-4">
+              We understand that emergencies happen. Call our 24/7 hotline for
+              immediate babysitting assistance when you need it most.
+            </p>
+            <div class="emergency-actions">
+              <a href="tel:+15551234273" class="btn btn-light btn-lg me-3">
+                <i class="fas fa-phone me-2"></i>Call Now: (555) 123-CARE
+              </a>
+              <a href="contact.html" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-comments me-2"></i>Live Chat Support
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">
+              <i class="fas fa-heart text-primary me-2"></i>CareConnect
+            </h5>
+            <p class="text-white-50">
+              Connecting families with trusted care providers for baby care,
+              senior care, tutoring, housekeeping, and more.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="babycare.html"
+                  class="text-white-50 text-decoration-none"
+                  >Baby Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#adult-care"
+                  class="text-white-50 text-decoration-none"
+                  >Adult Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#senior-care"
+                  class="text-white-50 text-decoration-none"
+                  >Senior Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#tutoring"
+                  class="text-white-50 text-decoration-none"
+                  >Tutoring</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#housekeeping"
+                  class="text-white-50 text-decoration-none"
+                  >Housekeeping</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Support</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Safety Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Background Checks</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Community Guidelines</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Newsletter -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Stay Connected</h5>
+            <p class="text-white-50 mb-3">
+              Get parenting tips and updates delivered to your inbox.
+            </p>
+            <div class="newsletter-form">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-info mt-4">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-phone text-primary me-2"></i>
+                <span class="text-white-50">(555) 123-CARE</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary me-2"></i>
+                <span class="text-white-50">support@careconnect.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 border-secondary" />
+
+        <!-- Footer Bottom -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="text-white-50 mb-0">
+              &copy; 2025 CareConnect. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login to CareConnect</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rememberMe"
+                />
+                <label class="form-check-label" for="rememberMe"
+                  >Remember me</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <div class="text-center mt-3">
+                <a href="#" class="text-decoration-none">Forgot password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Join CareConnect</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="userType" class="form-label"
+                  >I am looking for:</label
+                >
+                <select class="form-select" id="userType" required>
+                  <option value="">Select an option</option>
+                  <option value="care-seeker">Care for my family</option>
+                  <option value="care-provider">Work as a care provider</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="agreeTerms"
+                  required
+                />
+                <label class="form-check-label" for="agreeTerms">
+                  I agree to the
+                  <a href="#" class="text-decoration-none">Terms of Service</a>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Create Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/babycare.js"></script>
+  </body>
+</html>
