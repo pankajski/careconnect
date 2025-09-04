@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareConnect - Find Quality Care Services</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Hero Carousel Section with Navigation -->
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <!-- Navigation Bar (Over Carousel) -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark position-absolute w-100"
+        style="z-index: 10"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-3" href="#">
+            <i class="fas fa-heart text-primary me-2"></i>CareConnect
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-4">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#baby-care">Baby Care</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#adult-care">Adult Care</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#senior-care">Senior Care</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#tutoring">Tutoring</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#housekeeping"
+                      >Housekeeping</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Login/Register Buttons -->
+            <div class="d-flex gap-2">
+              <button
+                class="btn btn-outline-light"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                <i class="fas fa-sign-in-alt me-1"></i>Login
+              </button>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#registerModal"
+              >
+                <i class="fas fa-user-plus me-1"></i>Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+        <!-- Slide 1 - Baby Care -->
+        <div class="carousel-item active">
+          <div
+            class="carousel-bg"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            "
+          ></div>
+          <div class="carousel-caption-custom">
+            <div class="container">
+              <div class="row align-items-center min-vh-100 pt-5">
+                <div class="col-lg-6">
+                  <h1
+                    class="display-4 fw-bold text-white mb-4 animate-slide-up"
+                  >
+                    Quality Baby Care Services
+                  </h1>
+                  <p
+                    class="lead text-white-75 mb-4 animate-slide-up animation-delay-1"
+                  >
+                    Find trusted, experienced babysitters and nannies for your
+                    little ones. Safe, reliable, and loving care when you need
+                    it most.
+                  </p>
+                  <div class="animate-slide-up animation-delay-2">
+                    <a href="#baby-care" class="btn btn-primary btn-lg me-3">
+                      <i class="fas fa-search me-2"></i>Find Baby Care
+                    </a>
+                    <a href="#about" class="btn btn-outline-light btn-lg">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Senior Care -->
+        <div class="carousel-item">
+          <div
+            class="carousel-bg"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            "
+          ></div>
+          <div class="carousel-caption-custom">
+            <div class="container">
+              <div class="row align-items-center min-vh-100 pt-5">
+                <div class="col-lg-6">
+                  <h1
+                    class="display-4 fw-bold text-white mb-4 animate-slide-up"
+                  >
+                    Compassionate Senior Care
+                  </h1>
+                  <p
+                    class="lead text-white-75 mb-4 animate-slide-up animation-delay-1"
+                  >
+                    Professional elderly care services with dignity and respect.
+                    From companionship to medical assistance.
+                  </p>
+                  <div class="animate-slide-up animation-delay-2">
+                    <a href="#senior-care" class="btn btn-primary btn-lg me-3">
+                      <i class="fas fa-heart me-2"></i>Find Senior Care
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">
+                      Get Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - All Services -->
+        <div class="carousel-item">
+          <div
+            class="carousel-bg"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            "
+          ></div>
+          <div class="carousel-caption-custom">
+            <div class="container">
+              <div class="row align-items-center min-vh-100 pt-5">
+                <div class="col-lg-6">
+                  <h1
+                    class="display-4 fw-bold text-white mb-4 animate-slide-up"
+                  >
+                    Complete Care Solutions
+                  </h1>
+                  <p
+                    class="lead text-white-75 mb-4 animate-slide-up animation-delay-1"
+                  >
+                    Tutoring, housekeeping, adult care - all your family needs
+                    in one place. Trusted professionals at your service.
+                  </p>
+                  <div class="animate-slide-up animation-delay-2">
+                    <a href="#services" class="btn btn-primary btn-lg me-3">
+                      <i class="fas fa-th-large me-2"></i>All Services
+                    </a>
+                    <a
+                      href="#how-it-works"
+                      class="btn btn-outline-light btn-lg"
+                    >
+                      How It Works
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold mb-3">Our Care Services</h2>
+            <p class="lead text-muted">
+              Professional care services tailored to your family's needs
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Baby Care -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-baby text-primary"></i>
+                </div>
+                <h4 class="card-title mb-3">Baby Care</h4>
+                <p class="card-text text-muted">
+                  Professional babysitters and nannies for newborns to toddlers.
+                  Background checked and experienced caregivers.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Newborn care
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Babysitting
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Nanny services
+                  </li>
+                </ul>
+                <a href="#baby-care" class="btn btn-primary w-100"
+                  >Find Baby Care</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Adult Care -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-user-nurse text-primary"></i>
+                </div>
+                <h4 class="card-title mb-3">Adult Care</h4>
+                <p class="card-text text-muted">
+                  Specialized care for adults with special needs or
+                  disabilities. Compassionate and professional support.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Special needs
+                    care
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Companion care
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Personal
+                    assistance
+                  </li>
+                </ul>
+                <a href="#adult-care" class="btn btn-primary w-100"
+                  >Find Adult Care</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Care -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-heart text-primary"></i>
+                </div>
+                <h4 class="card-title mb-3">Senior Care</h4>
+                <p class="card-text text-muted">
+                  Elderly care services including companionship, medical
+                  assistance, and daily living support.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Elder
+                    companionship
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Medical
+                    assistance
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Daily living
+                    help
+                  </li>
+                </ul>
+                <a href="#senior-care" class="btn btn-primary w-100"
+                  >Find Senior Care</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Tutoring -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-graduation-cap text-primary"></i>
+                </div>
+                <h4 class="card-title mb-3">Tutoring</h4>
+                <p class="card-text text-muted">
+                  Professional tutors for all subjects and grade levels.
+                  Personalized learning support for academic success.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>All subjects
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Test
+                    preparation
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Online &
+                    in-person
+                  </li>
+                </ul>
+                <a href="#tutoring" class="btn btn-primary w-100"
+                  >Find Tutors</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Housekeeping -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-home text-primary"></i>
+                </div>
+                <h4 class="card-title mb-3">Housekeeping</h4>
+                <p class="card-text text-muted">
+                  Professional cleaning and housekeeping services. Regular
+                  maintenance or deep cleaning options.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Regular
+                    cleaning
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Deep cleaning
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Home
+                    organization
+                  </li>
+                </ul>
+                <a href="#housekeeping" class="btn btn-primary w-100"
+                  >Find Housekeeping</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Services -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-plus-circle text-primary"></i>
+                </div>
+                <h4 class="card-title mb-3">More Services</h4>
+                <p class="card-text text-muted">
+                  Pet care, personal assistance, errand running, and other
+                  specialized services for your convenience.
+                </p>
+                <ul class="list-unstyled text-start mb-4">
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Pet sitting
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Errand running
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-primary me-2"></i>Personal
+                    assistance
+                  </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary w-100"
+                  >Explore More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold mb-3">How It Works</h2>
+            <p class="lead text-muted">
+              Simple steps to find the perfect care for your family
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <div class="step-number mb-3">1</div>
+              <div class="step-icon mb-3">
+                <i class="fas fa-search"></i>
+              </div>
+              <h5 class="mb-3">Search & Browse</h5>
+              <p class="text-muted">
+                Browse profiles and find caregivers that match your specific
+                needs and preferences.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <div class="step-number mb-3">2</div>
+              <div class="step-icon mb-3">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h5 class="mb-3">Connect & Interview</h5>
+              <p class="text-muted">
+                Contact potential caregivers, conduct interviews, and check
+                references.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <div class="step-number mb-3">3</div>
+              <div class="step-icon mb-3">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h5 class="mb-3">Hire & Book</h5>
+              <p class="text-muted">
+                Choose your caregiver and schedule services that work for your
+                family.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <div class="step-number mb-3">4</div>
+              <div class="step-icon mb-3">
+                <i class="fas fa-star"></i>
+              </div>
+              <h5 class="mb-3">Rate & Review</h5>
+              <p class="text-muted">
+                Share your experience and help other families find quality care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="stat-item">
+              <h2 class="display-4 fw-bold mb-0 counter" data-target="50000">
+                0
+              </h2>
+              <p class="mb-0">Families Served</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="stat-item">
+              <h2 class="display-4 fw-bold mb-0 counter" data-target="25000">
+                0
+              </h2>
+              <p class="mb-0">Care Providers</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="stat-item">
+              <h2 class="display-4 fw-bold mb-0 counter" data-target="98">0</h2>
+              <p class="mb-0">% Satisfaction Rate</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="stat-item">
+              <h2 class="display-4 fw-bold mb-0 counter" data-target="500">
+                0
+              </h2>
+              <p class="mb-0">Cities Covered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold mb-3">What Families Say</h2>
+            <p class="lead text-muted">Real reviews from satisfied families</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="stars mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">
+                  "Found an amazing babysitter through CareConnect. She's
+                  reliable, caring, and my kids absolutely love her!"
+                </p>
+                <div class="testimonial-author">
+                  <strong>Sarah Johnson</strong>
+                  <small class="text-muted d-block">Mother of 2</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="stars mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">
+                  "The senior care provider we found is compassionate and
+                  professional. Dad feels comfortable and happy."
+                </p>
+                <div class="testimonial-author">
+                  <strong>Michael Chen</strong>
+                  <small class="text-muted d-block"
+                    >Son of Senior Care Client</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="stars mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="card-text">
+                  "Excellent tutoring service! My daughter's grades improved
+                  significantly with the help of her tutor."
+                </p>
+                <div class="testimonial-author">
+                  <strong>Emma Davis</strong>
+                  <small class="text-muted d-block">Parent</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-gradient-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="display-5 fw-bold mb-4">Ready to Find Quality Care?</h2>
+            <p class="lead mb-4">
+              Join thousands of families who trust CareConnect for their care
+              needs. Start your search today!
+            </p>
+            <div
+              class="d-flex flex-column flex-md-row gap-3 justify-content-center"
+            >
+              <a href="#services" class="btn btn-light btn-lg">
+                <i class="fas fa-search me-2"></i>Find Care Now
+              </a>
+              <button
+                class="btn btn-outline-light btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#registerModal"
+              >
+                <i class="fas fa-user-plus me-2"></i>Join as Provider
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">
+              <i class="fas fa-heart text-primary me-2"></i>CareConnect
+            </h5>
+            <p class="text-white-50">
+              Connecting families with trusted care providers for baby care,
+              senior care, tutoring, housekeeping, and more.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#baby-care" class="text-white-50 text-decoration-none"
+                  >Baby Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#adult-care" class="text-white-50 text-decoration-none"
+                  >Adult Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#senior-care"
+                  class="text-white-50 text-decoration-none"
+                  >Senior Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#tutoring" class="text-white-50 text-decoration-none"
+                  >Tutoring</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#housekeeping"
+                  class="text-white-50 text-decoration-none"
+                  >Housekeeping</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Support</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Safety Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Background Checks</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Community Guidelines</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Newsletter -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Stay Connected</h5>
+            <p class="text-white-50 mb-3">
+              Get care tips and updates delivered to your inbox.
+            </p>
+            <div class="newsletter-form">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-info mt-4">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-phone text-primary me-2"></i>
+                <span class="text-white-50">(555) 123-CARE</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary me-2"></i>
+                <span class="text-white-50">support@careconnect.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 border-secondary" />
+
+        <!-- Footer Bottom -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="text-white-50 mb-0">
+              &copy; 2025 CareConnect. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login to CareConnect</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rememberMe"
+                />
+                <label class="form-check-label" for="rememberMe"
+                  >Remember me</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <div class="text-center mt-3">
+                <a href="#" class="text-decoration-none">Forgot password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Join CareConnect</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="userType" class="form-label"
+                  >I am looking for:</label
+                >
+                <select class="form-select" id="userType" required>
+                  <option value="">Select an option</option>
+                  <option value="care-seeker">Care for my family</option>
+                  <option value="care-provider">Work as a care provider</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="agreeTerms"
+                  required
+                />
+                <label class="form-check-label" for="agreeTerms">
+                  I agree to the
+                  <a href="#" class="text-decoration-none">Terms of Service</a>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Create Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - CareConnect</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/additional-styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+          <i class="fas fa-heart text-primary me-2"></i>CareConnect
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="index.html#baby-care"
+                    >Baby Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#adult-care"
+                    >Adult Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#senior-care"
+                    >Senior Care</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#tutoring"
+                    >Tutoring</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#housekeeping"
+                    >Housekeeping</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Login/Register Buttons -->
+          <div class="d-flex gap-2">
+            <button
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <i class="fas fa-sign-in-alt me-1"></i>Login
+            </button>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              <i class="fas fa-user-plus me-1"></i>Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-contact py-5">
+      <div
+        class="hero-bg"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        "
+      ></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-50">
+          <div class="col-lg-8 mx-auto text-center text-white">
+            <h1 class="display-4 fw-bold mb-4 animate-slide-up">Contact Us</h1>
+            <p class="lead mb-4 animate-slide-up animation-delay-1">
+              We're here to help! Get in touch with our team for any questions
+              or support you need.
+            </p>
+            <nav
+              aria-label="breadcrumb"
+              class="animate-slide-up animation-delay-2"
+            >
+              <ol class="breadcrumb justify-content-center bg-transparent">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-white-75">Home</a>
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  Contact
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Contact Info Cards -->
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-card card h-100 border-0 shadow-sm text-center">
+              <div class="card-body p-4">
+                <div class="contact-icon mb-3">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <h5 class="card-title mb-3">Call Us</h5>
+                <p class="text-muted mb-3">
+                  Speak with our customer support team
+                </p>
+                <div class="contact-details">
+                  <p class="h6 text-primary mb-1">(555) 123-CARE</p>
+                  <p class="small text-muted mb-0">Mon-Fri: 8AM-8PM</p>
+                  <p class="small text-muted">Weekends: 9AM-6PM</p>
+                </div>
+                <a href="tel:+15551234273" class="btn btn-outline-primary mt-3">
+                  <i class="fas fa-phone me-2"></i>Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-card card h-100 border-0 shadow-sm text-center">
+              <div class="card-body p-4">
+                <div class="contact-icon mb-3">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h5 class="card-title mb-3">Email Us</h5>
+                <p class="text-muted mb-3">Send us a message anytime</p>
+                <div class="contact-details">
+                  <p class="h6 text-primary mb-1">support@careconnect.com</p>
+                  <p class="small text-muted mb-0">General inquiries</p>
+                  <p class="small text-muted">We respond within 24 hours</p>
+                </div>
+                <a
+                  href="mailto:support@careconnect.com"
+                  class="btn btn-outline-primary mt-3"
+                >
+                  <i class="fas fa-envelope me-2"></i>Send Email
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-card card h-100 border-0 shadow-sm text-center">
+              <div class="card-body p-4">
+                <div class="contact-icon mb-3">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h5 class="card-title mb-3">Visit Us</h5>
+                <p class="text-muted mb-3">Come to our headquarters</p>
+                <div class="contact-details">
+                  <p class="h6 text-primary mb-1">123 Care Street</p>
+                  <p class="small text-muted mb-0">San Francisco, CA 94102</p>
+                  <p class="small text-muted">United States</p>
+                </div>
+                <a href="#map-section" class="btn btn-outline-primary mt-3">
+                  <i class="fas fa-map me-2"></i>View Map
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold mb-3">Send Us a Message</h2>
+              <p class="lead text-muted">
+                Fill out the form below and we'll get back to you as soon as
+                possible
+              </p>
+            </div>
+
+            <div class="card border-0 shadow">
+              <div class="card-body p-5">
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName" class="form-label"
+                        >First Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName" class="form-label"
+                        >Last Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="email" class="form-label">Email *</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" id="phone" />
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject *</label>
+                    <select class="form-select" id="subject" required>
+                      <option value="">Choose a subject</option>
+                      <option value="general">General Inquiry</option>
+                      <option value="support">Technical Support</option>
+                      <option value="billing">Billing Question</option>
+                      <option value="safety">Safety Concern</option>
+                      <option value="provider">Become a Provider</option>
+                      <option value="partnership">Partnership</option>
+                      <option value="feedback">Feedback</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="urgency" class="form-label"
+                      >Priority Level</label
+                    >
+                    <div class="d-flex gap-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="urgency"
+                          id="lowPriority"
+                          value="low"
+                          checked
+                        />
+                        <label class="form-check-label" for="lowPriority"
+                          >Low</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="urgency"
+                          id="mediumPriority"
+                          value="medium"
+                        />
+                        <label class="form-check-label" for="mediumPriority"
+                          >Medium</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="urgency"
+                          id="highPriority"
+                          value="high"
+                        />
+                        <label class="form-check-label" for="highPriority"
+                          >High</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="urgency"
+                          id="urgentPriority"
+                          value="urgent"
+                        />
+                        <label class="form-check-label" for="urgentPriority"
+                          >Urgent</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="6"
+                      required
+                      placeholder="Please provide details about your inquiry..."
+                    ></textarea>
+                    <div class="form-text">
+                      <span id="charCount">0</span>/1000 characters
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="newsletter"
+                      />
+                      <label class="form-check-label" for="newsletter">
+                        Subscribe to our newsletter for care tips and updates
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                  </div>
+
+                  <p class="text-center text-muted mt-3 mb-0">
+                    <small>We'll respond to your message within 24 hours</small>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
+              <p class="lead text-muted">Quick answers to common questions</p>
+            </div>
+
+            <div class="accordion" id="faqAccordion">
+              <!-- FAQ Item 1 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    How do I find the right care provider?
+                  </button>
+                </h3>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Our platform allows you to search by service type, location,
+                    availability, and specific requirements. You can browse
+                    profiles, read reviews, and contact providers directly to
+                    ensure they're the right fit for your family.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    Are all care providers background checked?
+                  </button>
+                </h3>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, all care providers on our platform undergo
+                    comprehensive background checks, including criminal history,
+                    identity verification, and reference checks. We prioritize
+                    your family's safety above all else.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    What if I'm not satisfied with a care provider?
+                  </button>
+                </h3>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We offer 24/7 customer support to address any concerns. If
+                    you're not satisfied with a care provider, we'll work with
+                    you to find a better match and ensure your needs are met.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    How much do your services cost?
+                  </button>
+                </h3>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Our basic membership is free for families seeking care. Care
+                    providers set their own rates, which vary based on services,
+                    experience, and location. You can view rates before
+                    contacting providers.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    How do I become a care provider?
+                  </button>
+                </h3>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Click "Register" and select "Work as a care provider."
+                    You'll complete our application process, including
+                    background checks and verification. Once approved, you can
+                    create your profile and start connecting with families.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                  >
+                    Do you offer emergency care services?
+                  </button>
+                </h3>
+                <div
+                  id="faq6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    While we recommend booking in advance when possible, many of
+                    our providers offer last-minute and emergency services. Use
+                    our urgent care filter to find providers available on short
+                    notice.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="display-6 fw-bold mb-3">Find Us</h2>
+            <p class="lead text-muted">
+              Visit our headquarters in San Francisco
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="map-container card border-0 shadow">
+              <div
+                class="map-placeholder bg-secondary text-white d-flex align-items-center justify-content-center"
+                style="height: 400px"
+              >
+                <div class="text-center">
+                  <i class="fas fa-map-marker-alt fa-3x mb-3"></i>
+                  <h5>Interactive Map</h5>
+                  <p class="mb-0">123 Care Street, San Francisco, CA 94102</p>
+                  <a
+                    href="https://maps.google.com/?q=123+Care+Street+San+Francisco+CA"
+                    target="_blank"
+                    class="btn btn-light mt-3"
+                  >
+                    <i class="fas fa-external-link-alt me-2"></i>Open in Google
+                    Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Hours & Additional Info -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="info-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="info-icon mb-3">
+                  <i class="fas fa-clock text-primary"></i>
+                </div>
+                <h5 class="card-title">Office Hours</h5>
+                <div class="office-hours text-muted">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Monday - Friday:</span>
+                    <span>8:00 AM - 8:00 PM</span>
+                  </div>
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Saturday:</span>
+                    <span>9:00 AM - 6:00 PM</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>Sunday:</span>
+                    <span>10:00 AM - 4:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="info-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="info-icon mb-3">
+                  <i class="fas fa-headset text-primary"></i>
+                </div>
+                <h5 class="card-title">24/7 Support</h5>
+                <p class="text-muted mb-3">
+                  Our customer support team is available around the clock to
+                  help with urgent matters and emergencies.
+                </p>
+                <a href="tel:+15551234273" class="btn btn-outline-primary">
+                  Emergency Support
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="info-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="info-icon mb-3">
+                  <i class="fas fa-comments text-primary"></i>
+                </div>
+                <h5 class="card-title">Live Chat</h5>
+                <p class="text-muted mb-3">
+                  Get instant help with our live chat feature. Available during
+                  business hours for quick assistance.
+                </p>
+                <button
+                  class="btn btn-outline-primary"
+                  onclick="openLiveChat()"
+                >
+                  Start Chat
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Company Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">
+              <i class="fas fa-heart text-primary me-2"></i>CareConnect
+            </h5>
+            <p class="text-white-50">
+              Connecting families with trusted care providers for baby care,
+              senior care, tutoring, housekeeping, and more.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="index.html#baby-care"
+                  class="text-white-50 text-decoration-none"
+                  >Baby Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#adult-care"
+                  class="text-white-50 text-decoration-none"
+                  >Adult Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#senior-care"
+                  class="text-white-50 text-decoration-none"
+                  >Senior Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#tutoring"
+                  class="text-white-50 text-decoration-none"
+                  >Tutoring</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#housekeeping"
+                  class="text-white-50 text-decoration-none"
+                  >Housekeeping</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Support</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Safety Center</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Background Checks</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Community Guidelines</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Newsletter -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Stay Connected</h5>
+            <p class="text-white-50 mb-3">
+              Get care tips and updates delivered to your inbox.
+            </p>
+            <div class="newsletter-form">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-info mt-4">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-phone text-primary me-2"></i>
+                <span class="text-white-50">(555) 123-CARE</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary me-2"></i>
+                <span class="text-white-50">support@careconnect.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 border-secondary" />
+
+        <!-- Footer Bottom -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="text-white-50 mb-0">
+              &copy; 2025 CareConnect. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login to CareConnect</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rememberMe"
+                />
+                <label class="form-check-label" for="rememberMe"
+                  >Remember me</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <div class="text-center mt-3">
+                <a href="#" class="text-decoration-none">Forgot password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Join CareConnect</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="userType" class="form-label"
+                  >I am looking for:</label
+                >
+                <select class="form-select" id="userType" required>
+                  <option value="">Select an option</option>
+                  <option value="care-seeker">Care for my family</option>
+                  <option value="care-provider">Work as a care provider</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="agreeTerms"
+                  required
+                />
+                <label class="form-check-label" for="agreeTerms">
+                  I agree to the
+                  <a href="#" class="text-decoration-none">Terms of Service</a>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Create Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/contact.js"></script>
+  </body>
+</html>
